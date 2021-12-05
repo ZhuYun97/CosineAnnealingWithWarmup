@@ -2,11 +2,11 @@
 
 ## Formulation
 The learning rate is annealed using a cosine schedule over the course of learning of _n\_total_ total steps with an initial warmup period of _n\_warmup_ steps. Hence, the learning rate at step _i_ is computed as:<br>
-<img src="https://user-images.githubusercontent.com/37068560/144736381-735a21cf-476e-4728-a785-cbe59858b24e.png" width="500px" />
+<img src="https://user-images.githubusercontent.com/37068560/144736381-735a21cf-476e-4728-a785-cbe59858b24e.png" width="600px" />
 
 
 Learning rate will be changed as:<br>
-<img src="https://user-images.githubusercontent.com/37068560/144736137-5bb1eeb5-70bf-4e18-8302-3937a718610b.png" width="500px" />
+<img src="https://user-images.githubusercontent.com/37068560/144736137-5bb1eeb5-70bf-4e18-8302-3937a718610b.png" width="300px" />
 
 
 ## Usage
