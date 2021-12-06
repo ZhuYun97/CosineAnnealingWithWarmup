@@ -5,7 +5,7 @@ import numpy as np
 class LR_Scheduler(object):
     def __init__(self, optimizer, warmup_epochs, warmup_lr, num_epochs, base_lr, final_lr, iter_per_epoch):
         self.base_lr = base_lr
-        self.constant_predictor_lr = constant_predictor_lr
+        # self.constant_predictor_lr = constant_predictor_lr
         warmup_iter = iter_per_epoch * warmup_epochs
         warmup_lr_schedule = np.linspace(warmup_lr, base_lr, warmup_iter)
         decay_iter = iter_per_epoch * (num_epochs - warmup_epochs)

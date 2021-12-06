@@ -21,7 +21,8 @@ lr_scheduler = LR_Scheduler(
 
 for data in range(train_loader):
   optimizer.zero_grad()
-  loss = model(data) 
+  output = model(data) 
+  loss = lossfunc(output,gt)
   loss.backward()
   optimizer.step()
   lr_scheduler.step()
